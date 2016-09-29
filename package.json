@@ -1,6 +1,6 @@
 {
   "name": "rawn-tool-bar",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Simple tool bar using [tool-bar](https://atom.io/packages/tool-bar) package.",
   "main": "./lib/main-rawn.coffee",
   "dependencies": {},
