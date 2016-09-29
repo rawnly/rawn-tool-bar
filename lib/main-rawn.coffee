@@ -19,12 +19,12 @@ module.exports =
       callback: 'application:open-file'
       tooltip: 'Open...'
       iconset: 'ion'
-    @toolBar.addSpacer()
     @toolBar.addButton
       icon: 'star'
       callback: 'application:open-your-snippets'
       tooltip: 'Snippets'
       iconset: 'ion'
+    @toolBar.addSpacer()
     if atom.packages.getLoadedPackage('term3')
       @toolBar.addButton
         icon: 'code'
