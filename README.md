@@ -16,7 +16,7 @@ Simply copy and paste following command in your terminal:
 - Open Folder
 - Open Snippets file
 
-:hash:
+:cloud:
 
 - Open [Term3][1]
 - Toggle [Minimap][2]
@@ -27,7 +27,7 @@ Simply copy and paste following command in your terminal:
 - Auto Prefix CSS [Autoprefixer][7]
 - Reorder CSS [Clean CSS][8]
 
-:hash:
+:cloud:
 
 - Settings View
 - Command Palette
