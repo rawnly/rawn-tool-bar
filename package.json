@@ -2,7 +2,7 @@
   "name": "rawn-tool-bar",
   "version": "0.2.0",
   "description": "Simple tool bar using [tool-bar](https://atom.io/packages/tool-bar) package.",
-  "main": "./lib/main-rawn.coffee",
+  "main": "./lib/main-rawn",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Rawnly/rawn-tool-bar/issues"
   },
-  "homepage": "https://github.com/Rawnly/rawn-tool-bar#readme"
+  "homepage": "https://github.com/Rawnly/rawn-tool-bar#readme",
+  "dependencies": {
+    "atom-package-deps"
+  }
 }
