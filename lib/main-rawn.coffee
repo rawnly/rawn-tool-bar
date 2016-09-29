@@ -19,14 +19,7 @@ module.exports =
       callback: 'application:open-file'
       tooltip: 'Open...'
       iconset: 'ion'
-    @toolBar.addButton
-      icon: 'archive'
-      callback: 'core:save'
-      tooltip: 'Save'
-      iconset: 'ion'
-
     @toolBar.addSpacer()
-
     @toolBar.addButton
       icon: 'star'
       callback: 'application:open-your-snippets'
@@ -38,35 +31,46 @@ module.exports =
         callback: 'term3:open'
         tooltip: 'Open Terminal'
         iconset: 'ion'
-    if atom.packages.getLoadedPackage('autoprefixer')
+
+    if atom.packages.getLoadedPackage('minimap')
       @toolBar.addButton
-        icon: 'fireball'
-        callback: 'Autoprefixer'
-        tooltip: 'Auto Prefix CSS'
+        icon: 'map'
+        callback: 'minimap:toggle'
+        tooltip: 'Toggle Minimap'
         iconset: 'ion'
-    if atom.packages.getLoadedPackage('fixmyjs')
-      @toolBar.addButton
-        icon: 'javascript-plain'
-        callback: 'FixMyJs'
-        tooltip: 'FixMyJs'
-        iconset: 'devicon'
-    if atom.packages.getLoadedPackage('git-plus')
-      @toolBar.addButton
-        icon: 'paper-airplane'
-        callback: 'git-plus:add-all-commit-and-push'
-        tooltip: 'Push All'
-        iconset: 'ion'
+
     if atom.packages.getLoadedPackage('atom-html-preview')
       @toolBar.addButton
         icon: 'html5-plain'
         callback: 'atom-html-preview:toggle'
         tooltip: 'HTML Preview'
         iconset: 'devicon'
-    if atom.packages.getLoadedPackage('minimap')
+
+    if atom.packages.getLoadedPackage('markdown-preview')
       @toolBar.addButton
-        icon: 'map'
-        callback: 'minimap:toggle'
-        tooltip: 'Toggle Minimap'
+        icon: 'social-markdown'
+        callback: 'markdown-preview:toggle'
+        tooltip: 'Markdown Preview'
+        iconset: 'ion'
+
+    if atom.packages.getLoadedPackage('git-plus')
+      @toolBar.addButton
+        icon: 'paper-airplane'
+        callback: 'git-plus:add-all-commit-and-push'
+        tooltip: 'Push All'
+        iconset: 'ion'
+
+    if atom.packages.getLoadedPackage('fixmyjs')
+      @toolBar.addButton
+        icon: 'javascript-plain'
+        callback: 'FixMyJs'
+        tooltip: 'FixMyJs'
+        iconset: 'devicon'
+    if atom.packages.getLoadedPackage('autoprefixer')
+      @toolBar.addButton
+        icon: 'fireball'
+        callback: 'Autoprefixer'
+        tooltip: 'Auto Prefix CSS'
         iconset: 'ion'
     if atom.packages.getLoadedPackage('css-clean')
       @toolBar.addButton
@@ -77,22 +81,17 @@ module.exports =
 
     @toolBar.addSpacer()
     @toolBar.addButton
-      icon: 'sourcetree-plain'
-      callback: 'tree-view:toggle'
-      tooltip: 'Tree View'
-      iconset: 'devicon'
+      icon: 'ios-cog'
+      callback: 'settings-view:open'
+      tooltip: 'Open Settings View'
+      iconset: 'ion'
     @toolBar.addButton
       icon: 'navicon-round'
       callback: 'command-palette:toggle'
       tooltip: 'Toggle Command Palette'
       iconset: 'ion'
     @toolBar.addButton
-      icon: 'ios-cog'
-      callback: 'settings-view:open'
-      tooltip: 'Open Settings View'
-      iconset: 'ion'
-    @toolBar.addButton
-      icon: 'ios-loop-strong'
-      callback: 'window:reload'
-      tooltip: 'Reload Window'
-      iconset: 'ion'
+      icon: 'sourcetree-plain'
+      callback: 'tree-view:toggle'
+      tooltip: 'Tree View'
+      iconset: 'devicon'
