@@ -10,6 +10,11 @@ module.exports =
   consumeToolBar: (toolBar) ->
     @toolBar = toolBar 'main-tool-bar'
     @toolBar.addButton
+      icon: 'document-text'
+      callback: 'application:new-file'
+      tooltip: 'New'
+      iconset: 'ion'
+    @toolBar.addButton
       icon: 'folder'
       callback: 'application:open-file'
       tooltip: 'Open...'
@@ -41,10 +46,10 @@ module.exports =
         iconset: 'ion'
     if atom.packages.getLoadedPackage('fixmyjs')
       @toolBar.addButton
-        icon: 'wrench'
+        icon: 'javascript-plain'
         callback: 'FixMyJs'
         tooltip: 'FixMyJs'
-        iconset: 'ion'
+        iconset: 'devicon'
     if atom.packages.getLoadedPackage('git-plus')
       @toolBar.addButton
         icon: 'paper-airplane'
@@ -71,6 +76,11 @@ module.exports =
         iconset: 'ion'
 
     @toolBar.addSpacer()
+    @toolBar.addButton
+      icon: 'sourcetree-plain'
+      callback: 'tree-view:toggle'
+      tooltip: 'Tree View'
+      iconset: 'devicon'
     @toolBar.addButton
       icon: 'navicon-round'
       callback: 'command-palette:toggle'
