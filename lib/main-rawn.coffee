@@ -63,6 +63,12 @@ module.exports =
         callback: 'minimap:toggle'
         tooltip: 'Toggle Minimap'
         iconset: 'ion'
+    if atom.packages.getLoadedPackage('css-clean')
+      @toolBar.addButton
+        icon: 'nuclear'
+        callback: 'css-clean:convert'
+        tooltip: 'Clean CSS'
+        iconset: 'ion'
 
     @toolBar.addSpacer()
     @toolBar.addButton
