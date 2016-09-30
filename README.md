@@ -44,6 +44,6 @@ Simply copy and paste following command in your terminal:
 
 # Other
 * Coded with [Atom](http://www.atom.io) :metal: an awsome code editor
-* Project under **MIT LICENSE** :scroll:
+* Project under [**MIT LICENSE**](http://github.com/Rawnly/rawn-tool-bar/License.md) :scroll:
 
 Made with :heart: by [Rawnly](http://github.com/Rawnly/)
