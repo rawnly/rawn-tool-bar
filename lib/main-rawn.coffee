@@ -62,7 +62,7 @@ module.exports =
     @toolBar.addSpacer()
     if atom.packages.getLoadedPackage('fixmyjs')
       @toolBar.addButton
-        icon: 'social-javascrip' #javascript-plain
+        icon: 'social-javascript' #javascript-plain
         callback: 'FixMyJs'
         tooltip: 'FixMyJs'
         iconset: 'ion' #devicon
