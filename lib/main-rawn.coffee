@@ -41,7 +41,7 @@ module.exports =
 
     if atom.packages.getLoadedPackage('atom-html-preview')
       @toolBar.addButton
-        icon: 'social-html5-outline' #html5-plain
+        icon: 'social-html5' #html5-plain
         callback: 'atom-html-preview:toggle'
         tooltip: 'HTML Preview'
         iconset: 'ion' #devicon
@@ -62,21 +62,15 @@ module.exports =
     @toolBar.addSpacer()
     if atom.packages.getLoadedPackage('fixmyjs')
       @toolBar.addButton
-        icon: 'social-javascript-outline' #javascript-plain
+        icon: 'social-javascrip' #javascript-plain
         callback: 'FixMyJs'
         tooltip: 'FixMyJs'
         iconset: 'ion' #devicon
     if atom.packages.getLoadedPackage('autoprefixer')
       @toolBar.addButton
-        icon: 'social-css3-outline' #fireball
+        icon: 'social-css3' #fireball
         callback: 'Autoprefixer'
         tooltip: 'Auto Prefix CSS'
-        iconset: 'ion'
-    if atom.packages.getLoadedPackage('css-clean')
-      @toolBar.addButton
-        icon: 'nuclear'
-        callback: 'css-clean:convert'
-        tooltip: 'Clean CSS'
         iconset: 'ion'
     if atom.packages.getLoadedPackage('atom-beautify')
       @toolBar.addButton
