@@ -41,10 +41,10 @@ module.exports =
 
     if atom.packages.getLoadedPackage('atom-html-preview')
       @toolBar.addButton
-        icon: 'html5-plain'
+        icon: 'social-html5-outline' #html5-plain
         callback: 'atom-html-preview:toggle'
         tooltip: 'HTML Preview'
-        iconset: 'devicon'
+        iconset: 'ion' #devicon
 
     if atom.packages.getLoadedPackage('markdown-preview')
       @toolBar.addButton
@@ -62,13 +62,13 @@ module.exports =
     @toolBar.addSpacer()
     if atom.packages.getLoadedPackage('fixmyjs')
       @toolBar.addButton
-        icon: 'javascript-plain'
+        icon: 'social-javascript-outline' #javascript-plain
         callback: 'FixMyJs'
         tooltip: 'FixMyJs'
-        iconset: 'devicon'
+        iconset: 'ion' #devicon
     if atom.packages.getLoadedPackage('autoprefixer')
       @toolBar.addButton
-        icon: 'fireball'
+        icon: 'social-css3-outline' #fireball
         callback: 'Autoprefixer'
         tooltip: 'Auto Prefix CSS'
         iconset: 'ion'
@@ -86,12 +86,12 @@ module.exports =
         iconset: 'ion'
     @toolBar.addSpacer()
     @toolBar.addButton
-      icon: 'ios-cog'
+      icon: 'gear-a'
       callback: 'settings-view:open'
       tooltip: 'Open Settings View'
       iconset: 'ion'
     @toolBar.addButton
-      icon: 'navicon-round'
+      icon: 'more'
       callback: 'command-palette:toggle'
       tooltip: 'Toggle Command Palette'
       iconset: 'ion'
