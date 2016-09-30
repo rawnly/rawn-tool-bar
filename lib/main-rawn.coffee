@@ -59,7 +59,7 @@ module.exports =
         callback: 'git-plus:add-all-commit-and-push'
         tooltip: 'Push All'
         iconset: 'ion'
-
+    @toolBar.addSpacer()
     if atom.packages.getLoadedPackage('fixmyjs')
       @toolBar.addButton
         icon: 'javascript-plain'
@@ -78,7 +78,12 @@ module.exports =
         callback: 'css-clean:convert'
         tooltip: 'Clean CSS'
         iconset: 'ion'
-
+    if atom.packages.getLoadedPackage('atom-beautify')
+      @toolBar.addButton
+        icon: 'wand'
+        callback: 'atom-beautify:beautify-editor'
+        tooltip: 'Beautify'
+        iconset: 'ion'
     @toolBar.addSpacer()
     @toolBar.addButton
       icon: 'ios-cog'
