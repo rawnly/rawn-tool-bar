@@ -1,3 +1,41 @@
+'context-menu':
+  'atom-workspace': [
+    { label: 'Reload', command:'window:reload' }
+    { label: 'Prompt', command:'rawn:todo' }
+    { label: 'Markdown Link', command:'markdown:paste-as-link' }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'rawn-init'
+      'submenu': [
+        { label: 'Reload', command:'window:reload' }
+        { label: 'Prompt', command:'rawn:todo' }
+        { label: 'Markdown Link', command:'markdown:paste-as-link' }
+      ]
+    ]
+  }
+]
+
+
+
+atom.commands.add 'atom-text-editor', 'rawn:todo', ->
+  return unless editor = atom.workspace.getActiveTextEditor()
+  selection = editor.getLastSelection()
+  selTxt = "#{selection.getText()}"
+  text = atom.clipboard.write("#{selTxt}")
+  clipText = atom.clipboard.read()
+  if clipText != ''
+    notify = atom.notifications.addInfo("#{clipText}", dismissable: true, buttons: [ { text: 'Copy', onDidClick: -> info() } ]  )
+  else
+    atom.notifications.addError("Empty Selection!", 'dismissable': true)
+  info = () ->
+      atom.notifications.addSuccess("Copied to clipboard!", 'dismissable': false)
+      atom.clipboard.write("#{clipText}")
+      notify.dismiss()
+# Update 1.1.2
+
 module.exports =
   activate: (state) ->
     require('atom-package-deps').install('tool-bar-main')
