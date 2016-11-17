@@ -63,14 +63,14 @@ module.exports =
     if atom.packages.getLoadedPackage('fixmyjs')
       @toolBar.addButton
         icon: 'social-javascript' #javascript-plain
-        callback: 'FixMyJs'
+        callback: 'FixMyJS'
         tooltip: 'FixMyJs'
         iconset: 'ion' #devicon
     if atom.packages.getLoadedPackage('autoprefixer')
       @toolBar.addButton
         icon: 'social-css3' #fireball
-        callback: 'Autoprefixer'
-        tooltip: 'Auto Prefix CSS'
+        callback: 'autoprefixer'
+        tooltip: 'Autoprefixer'
         iconset: 'ion'
     if atom.packages.getLoadedPackage('atom-beautify')
       @toolBar.addButton
