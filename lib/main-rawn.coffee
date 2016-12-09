@@ -31,7 +31,8 @@ module.exports =
         callback: 'term3:open'
         tooltip: 'Open Terminal'
         iconset: 'ion'
-
+    # else if atom.packages.getLoadedPackage('terminal-plus')
+    #   # body...
     if atom.packages.getLoadedPackage('minimap')
       @toolBar.addButton
         icon: 'map'
