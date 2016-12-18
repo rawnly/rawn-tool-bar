@@ -1,6 +1,6 @@
 # Rawn ToolBar
 
-Simple useful tool bar using Atom [tool-bar](https://atom.io/packages/tool-bar) package.
+A simple useful tool bar using the Atom [tool-bar](https://atom.io/packages/tool-bar) package.
 
 # Install
 Simply copy and paste following command in your terminal:
