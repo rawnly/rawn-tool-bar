@@ -1,5 +1,7 @@
 # Rawn ToolBar
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ada4d1b7e8994ffda387949f05ebd5d2)](https://www.codacy.com/app/fedevitale99/rawn-tool-bar?utm_source=github.com&utm_medium=referral&utm_content=Rawnly/rawn-tool-bar&utm_campaign=badger)
+
 A simple useful tool bar using the Atom [tool-bar](https://atom.io/packages/tool-bar) package.
 
 # Install
