@@ -5,13 +5,14 @@
 @import (inline) "../../tool-bar/iconsets/icomoon/icomoon.css";
 @import (inline) "../../tool-bar/iconsets/devicon/devicon.css";
 @import (inline) "../../tool-bar/iconsets/mdi/materialdesignicons.css";
-@import "../../atom-material-ui/styles/custom.less";
+// @import "../../atom-material-ui/styles/custom.less";
+
 .tool-bar {
   @button-margin-size: 2px;
   @button-border-size: 1px;
   background-color: @base-background-color;
   border: 1px solid @base-border-color;
-  color: @background-color-selected;
+  color: #FF0A78;
   display: flex;
   justify-content: flex-start;
 
@@ -23,7 +24,7 @@
     flex: 0 0 auto;
     margin: @button-margin-size;
     padding: 0;
-    color: lighten(@background-color-selected, 25%);;
+    color: lighten(#FF0A78, 25%);
 
     &:before {
       display: inline;
